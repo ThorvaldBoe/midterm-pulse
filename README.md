@@ -14,7 +14,7 @@ Open `index.html` in a browser, or serve the directory with any static file serv
 
 ## Data and scope
 
-The page queries Polymarket's public Gamma API from the browser. Market titles and availability can change, and the feed gracefully reports when matching markets are not available. Prices are presented as implied probabilities, not as guarantees or advice. The project is an independent visualization and is not affiliated with Polymarket.
+The page reads election forecast data from Polymarket's public Gamma API in the browser. It also reads Google News RSS headlines through the public AllOrigins CORS proxy and refreshes them every ten minutes. Market titles and availability can change; forecasts are not guarantees or advice. News availability depends on Google News and the proxy. This is an independent visualization.
 
 ## License
 
