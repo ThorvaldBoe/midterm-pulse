@@ -14,7 +14,7 @@ Open `index.html` in a browser, or serve the directory with any static file serv
 
 ## Data and scope
 
-The page reads election forecast data from Polymarket's public Gamma API in the browser. It also reads Google News RSS headlines through the public RSS2JSON conversion service and refreshes them every ten minutes. Market titles and availability can change; forecasts are not guarantees or advice. News availability depends on Google News and the proxy. This is an independent visualization.
+The page reads election forecast data from Polymarket's public Gamma API in the browser. It also reads Google News RSS headlines through the public RSS2JSON conversion service and refreshes them every ten minutes. Market titles and availability can change; forecasts are not guarantees or advice. News availability depends on Google News and the proxy. Current Senate seat holders are sourced from the [United States Congress Legislators dataset](https://github.com/unitedstates/congress-legislators). This is an independent visualization.
 
 ## License
 
