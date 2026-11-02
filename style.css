@@ -111,3 +111,10 @@
 .house-other-counts span{display:flex;justify-content:space-between;gap:5px;padding:7px;background:#141b24;color:#969eaa;font:7px/1.35 var(--mono)}
 .house-other-counts b{color:var(--paper);font-size:9px}
 @media(max-width:750px){.house-projection-tally{gap:6px;padding:9px}.house-projection-tally span{font-size:6px}.house-projection-tally strong{font-size:15px}.house-three-groups{grid-template-columns:1fr}.house-group-list{max-height:190px}.house-other-counts{grid-template-columns:1fr}.house-net-shift{align-items:flex-start;flex-direction:column}.house-net-shift strong{text-align:left}}
+
+/* Forecast uncertainty notice */
+.forecast-disclaimer{width:min(900px,89.4%);margin:22px auto 0;padding:14px 18px;display:flex;align-items:center;gap:13px;background:linear-gradient(100deg,rgba(216,197,143,.13),rgba(216,197,143,.045));border:1px solid rgba(216,197,143,.46);border-left:3px solid var(--lime);color:var(--paper)}
+.disclaimer-mark{width:23px;height:23px;flex:0 0 23px;border:1px solid var(--lime);border-radius:50%;display:grid;place-items:center;color:var(--lime);font:500 13px var(--mono)}
+.forecast-disclaimer p{margin:0;font-size:13px;line-height:1.5;color:#c4c4bb}
+.forecast-disclaimer strong{color:var(--paper);font-weight:700}
+@media(max-width:600px){.forecast-disclaimer{width:calc(100% - 32px);margin-top:14px;padding:12px 13px;align-items:flex-start}.forecast-disclaimer p{font-size:12px}}
