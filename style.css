@@ -121,8 +121,8 @@
 
 /* Lightweight aggregate visit count */
 .footer-counter{display:flex;align-items:center;gap:8px;white-space:nowrap}
-.counter-label,.counter-credit{font:8px var(--mono);letter-spacing:.07em;color:#8c8e81}
-.footer-counter .counterapi{display:inline;min-height:18px!important;color:var(--lime)!important;font:500 10px var(--mono)!important}
+.counter-badge{display:block;width:auto;height:19px;max-width:190px;object-fit:contain}
+.counter-credit{font:8px var(--mono);letter-spacing:.07em;color:#8c8e81}
 .counter-credit{color:#a3a398;text-decoration:underline;text-underline-offset:2px}
 .counter-credit:hover{color:var(--paper)}
 @media(max-width:700px){footer{flex-wrap:wrap;gap:14px}.footer-counter{margin-left:auto}}
