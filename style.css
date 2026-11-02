@@ -26,3 +26,7 @@
 .process-note{margin:13px 0 0;color:#858d96;font:9px/1.5 var(--mono)}
 .process-card.unavailable{min-height:150px;display:flex;flex-direction:column;justify-content:center}
 @media(max-width:750px){.process-section{padding:0 7% 55px}.process-markets{grid-template-columns:1fr}.process-card{padding:15px}.process-card p{min-height:0}}
+
+.process-card.resolved{border-color:#635c43;background:linear-gradient(135deg,#20231f,var(--panel) 70%)}
+.process-card.resolved .process-card-label,.race-row .race-close.resolved{color:var(--lime)}
+@media(max-width:420px){.countdown strong{letter-spacing:-.07em}}
