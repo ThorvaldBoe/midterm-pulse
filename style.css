@@ -118,3 +118,11 @@
 .forecast-disclaimer p{margin:0;font-size:13px;line-height:1.5;color:#c4c4bb}
 .forecast-disclaimer strong{color:var(--paper);font-weight:700}
 @media(max-width:600px){.forecast-disclaimer{width:calc(100% - 32px);margin-top:14px;padding:12px 13px;align-items:flex-start}.forecast-disclaimer p{font-size:12px}}
+
+/* Lightweight aggregate visit count */
+.footer-counter{display:flex;align-items:center;gap:8px;white-space:nowrap}
+.counter-label,.counter-credit{font:8px var(--mono);letter-spacing:.07em;color:#8c8e81}
+.footer-counter .counterapi{display:inline;min-height:18px!important;color:var(--lime)!important;font:500 10px var(--mono)!important}
+.counter-credit{color:#a3a398;text-decoration:underline;text-underline-offset:2px}
+.counter-credit:hover{color:var(--paper)}
+@media(max-width:700px){footer{flex-wrap:wrap;gap:14px}.footer-counter{margin-left:auto}}
