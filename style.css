@@ -136,3 +136,14 @@
 .community-poll-frame{max-width:664px;margin:0 auto;padding:10px;background:#f7f7f5;border:1px solid var(--line);border-radius:10px;overflow:hidden}
 .community-poll-frame iframe{display:block;width:100%;height:460px;border:0;background:#fff}
 @media(max-width:750px){.community-poll-section{padding:8px 7% 58px}.community-poll-frame{padding:5px}.community-poll-frame iframe{height:460px}.community-poll-intro,.community-poll-note{font-size:12px}}
+
+
+/* State race movement history */
+.state-movement{margin-top:14px;padding-top:12px;border-top:1px solid var(--line)}
+.state-movement .movement-head{margin-bottom:8px}
+.state-movement .movement-chart{min-height:145px}
+.state-movement .movement-status{min-height:110px}
+.state-movement .movement-svg{height:138px}
+.state-movement .movement-deltas{position:static;justify-content:flex-end;margin:6px 0 0}
+.state-movement .movement-source{display:block;margin-top:6px}
+@media(max-width:600px){.state-movement{margin-top:11px;padding-top:10px}.state-movement .movement-svg{height:125px}.state-movement .movement-status{min-height:96px}.state-movement .movement-legend{max-width:70%;gap:8px}.state-movement .movement-head small{font-size:7px}}
