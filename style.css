@@ -127,17 +127,30 @@
 .counter-credit:hover{color:var(--paper)}
 @media(max-width:700px){footer{flex-wrap:wrap;gap:14px}.footer-counter{margin-left:auto}}
 
-/* Community prediction poll */
-.community-poll-section{padding:12px 10% 46px}
-.community-poll-section .section-head{margin-bottom:12px}
-.community-poll-intro,.community-poll-note{max-width:640px;color:#a3a398;font-size:13px;line-height:1.55}
-.community-poll-intro{margin:0 auto 12px}
+/* Optional community prediction poll */
+.community-poll-section{padding:10px 10% 28px}
+.community-poll-disclosure{max-width:850px;margin:0 auto;border:1px solid #34404d;background:linear-gradient(110deg,rgba(36,56,91,.18),rgba(200,58,73,.09));}
+.community-poll-summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:16px 18px;cursor:pointer}
+.community-poll-summary::-webkit-details-marker{display:none}
+.community-poll-summary:focus-visible{outline:2px solid var(--lime);outline-offset:2px}
+.community-poll-copy{min-width:0}
+.community-poll-copy .eyebrow{margin-bottom:7px}
+.community-poll-copy h2{margin:0;color:var(--paper);font:500 clamp(19px,2.4vw,25px)/1.2 var(--display)}
+.community-poll-copy p{margin:6px 0 0;color:#a3a398;font-size:12px;line-height:1.45}
+.community-poll-toggle{flex:0 0 auto;display:flex;align-items:center;gap:10px;padding:9px 11px;border:1px solid #596575;color:#d8c58f;font:8px var(--mono);letter-spacing:.08em}
+.community-poll-toggle .close-label{display:none}
+.community-poll-toggle i{font:16px var(--sans);font-style:normal;line-height:1}
+.community-poll-disclosure[open] .community-poll-toggle .open-label{display:none}
+.community-poll-disclosure[open] .community-poll-toggle .close-label{display:inline}
+.community-poll-disclosure[open] .community-poll-toggle i{transform:rotate(45deg)}
+.community-poll-content{padding:0 18px 16px;border-top:1px solid #34404d}
+.community-poll-intro,.community-poll-note{max-width:640px;color:#a3a398;font-size:12px;line-height:1.55}
+.community-poll-intro{margin:12px auto}
 .community-poll-note{margin:9px auto 0;font:9px/1.55 var(--mono);letter-spacing:.035em}
-.community-poll-frame{max-width:664px;margin:0 auto;padding:8px;background:#f7f7f5;border:1px solid var(--line);border-radius:10px;overflow:hidden}
-.community-poll-frame iframe{display:block;width:100%;height:380px;border:0;background:#fff}
-@media(max-width:750px){.community-poll-section{padding:6px 7% 30px}.community-poll-section .section-head{margin-bottom:9px}.community-poll-frame{padding:4px}.community-poll-frame iframe{height:330px}.community-poll-intro,.community-poll-note{font-size:11px}.community-poll-intro{margin-bottom:9px}.community-poll-note{margin-top:7px}}
-
-
+.community-poll-frame{max-width:664px;margin:0 auto;padding:7px;background:#141b24;border:1px solid #34404d;border-radius:8px;overflow:hidden}
+.community-poll-frame iframe{display:block;width:100%;height:380px;border:0;border-radius:4px;background:#fff}
+@media(max-width:750px){.community-poll-section{padding:7px 7% 18px}.community-poll-summary{gap:10px;padding:12px}.community-poll-copy .eyebrow{font-size:7px;margin-bottom:5px}.community-poll-copy h2{font-size:18px}.community-poll-copy p{font-size:11px}.community-poll-toggle{gap:6px;padding:8px;font-size:7px}.community-poll-content{padding:0 10px 12px}.community-poll-frame{padding:4px}.community-poll-frame iframe{height:330px}.community-poll-intro,.community-poll-note{font-size:11px}.community-poll-intro{margin:9px auto}.community-poll-note{margin-top:7px}}
+@media(max-width:400px){.community-poll-summary{align-items:flex-start}.community-poll-copy h2{font-size:16px}.community-poll-toggle{margin-top:18px}}
 /* State race movement history */
 .state-movement{margin-top:14px;padding-top:12px;border-top:1px solid var(--line)}
 .state-movement .movement-head{margin-bottom:8px}
