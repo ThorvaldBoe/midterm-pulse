@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=community-poll-compact-v25" />
+  <link rel="stylesheet" href="style.css?v=community-poll-optional-v26" />
 </head>
 <body>
   <div class="noise"></div>
@@ -17,10 +17,20 @@
   <aside class="forecast-disclaimer" role="note" aria-label="Forecast disclaimer"><span class="disclaimer-mark" aria-hidden="true">!</span><p><strong>Forecasts can be wrong.</strong> These Polymarket-based estimates are uncertain, can change, and are not election results.</p></aside>
   <main>
     <section class="community-poll-section" id="community-poll">
-      <div class="section-head"><div><div class="eyebrow"><span class="eyebrow-line"></span> COMMUNITY PREDICTION</div><h2>Make your call on the balance of power</h2></div></div>
-      <p class="community-poll-intro">Choose the House and Senate outcome you expect. The visitor tally is separate from the Polymarket market forecast.</p>
-      <div class="community-poll-frame"><iframe src="https://polls.tools/embed/vote/?id=bfiq7dub" title="Community poll: what balance of power do you expect after the 2026 midterms?" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
-      <p class="community-poll-note">↓ Keep scrolling for live forecasts, race maps, and election headlines. Visitor votes are informal and may not represent the wider electorate. Polls.tools deletes this poll and its votes after 90 days.</p>
+      <details class="community-poll-disclosure">
+        <summary class="community-poll-summary">
+          <div class="community-poll-copy"><div class="eyebrow"><span class="eyebrow-line"></span> OPTIONAL COMMUNITY POLL</div><h2>What do you expect after the midterms?</h2><p>Cast your call before exploring the forecasts.</p></div>
+          <span class="community-poll-toggle"><span class="open-label">OPEN POLL</span><span class="close-label">CLOSE POLL</span><i aria-hidden="true">+</i></span>
+        </summary>
+        <div class="community-poll-content">
+          <p class="community-poll-intro">Choose the House and Senate outcome you expect. The visitor tally is separate from the Polymarket market forecast.</p>
+          <div class="community-poll-frame"><iframe data-src="https://polls.tools/embed/vote/?id=bfiq7dub" title="Community poll: what balance of power do you expect after the 2026 midterms?" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+          <p class="community-poll-note">Visitor votes are informal and may not represent the wider electorate. Polls.tools deletes this poll and its votes after 90 days.</p>
+        </div>
+      </details>
+      <script>
+        (function(){const disclosure=document.querySelector('.community-poll-disclosure');const frame=disclosure&&disclosure.querySelector('iframe');if(disclosure&&frame)disclosure.addEventListener('toggle',function(){if(disclosure.open&&!frame.hasAttribute('src'))frame.src=frame.dataset.src})})();
+      </script>
     </section>
     <section class="hero">
       <div class="hero-copy"><div class="eyebrow"><span class="eyebrow-line"></span> U.S. MIDTERM ELECTION</div><h1>2026<br><span class="serif">forecast</span></h1><div class="hero-foot"><span class="stamp">ELECTION DAY<br>NOV 3, 2026</span><div class="countdown"><span class="count-label">UNTIL LAST POLLS CLOSE</span><strong id="countdown">—</strong><span class="count-unit" id="count-unit">DAYS · HOURS · MIN · SEC</span><span class="count-time">NOV 4, 2026 · 1:00 AM EASTERN</span><span class="count-note">Final poll closes in Alaska’s Aleutian Islands. Vote counting continues.</span></div></div></div>
