@@ -128,14 +128,14 @@
 @media(max-width:700px){footer{flex-wrap:wrap;gap:14px}.footer-counter{margin-left:auto}}
 
 /* Community prediction poll */
-.community-poll-section{padding:12px 10% 78px}
-.community-poll-section .section-head{margin-bottom:16px}
-.community-poll-intro,.community-poll-note{max-width:640px;color:#a3a398;font-size:13px;line-height:1.65}
-.community-poll-intro{margin:0 auto 20px}
-.community-poll-note{margin:14px auto 0;font:9px/1.7 var(--mono);letter-spacing:.035em}
-.community-poll-frame{max-width:664px;margin:0 auto;padding:10px;background:#f7f7f5;border:1px solid var(--line);border-radius:10px;overflow:hidden}
-.community-poll-frame iframe{display:block;width:100%;height:460px;border:0;background:#fff}
-@media(max-width:750px){.community-poll-section{padding:8px 7% 58px}.community-poll-frame{padding:5px}.community-poll-frame iframe{height:460px}.community-poll-intro,.community-poll-note{font-size:12px}}
+.community-poll-section{padding:12px 10% 46px}
+.community-poll-section .section-head{margin-bottom:12px}
+.community-poll-intro,.community-poll-note{max-width:640px;color:#a3a398;font-size:13px;line-height:1.55}
+.community-poll-intro{margin:0 auto 12px}
+.community-poll-note{margin:9px auto 0;font:9px/1.55 var(--mono);letter-spacing:.035em}
+.community-poll-frame{max-width:664px;margin:0 auto;padding:8px;background:#f7f7f5;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.community-poll-frame iframe{display:block;width:100%;height:380px;border:0;background:#fff}
+@media(max-width:750px){.community-poll-section{padding:6px 7% 30px}.community-poll-section .section-head{margin-bottom:9px}.community-poll-frame{padding:4px}.community-poll-frame iframe{height:330px}.community-poll-intro,.community-poll-note{font-size:11px}.community-poll-intro{margin-bottom:9px}.community-poll-note{margin-top:7px}}
 
 
 /* State race movement history */
